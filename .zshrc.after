@@ -1,1 +1,34 @@
-/Users/dani/.zshrc.after
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+source ~/.zshrc_files/.zshrc.secrets
+source ~/.zshrc_files/.zshrc.roles
+
+
+alias cdfs="cd ~/src/projects/fanscout"
+alias cdrc="cd ~/src/projects/RunClubApp"
+alias cdttm="cd ~/src/projects/tothemusic-webapp/"
+alias cdcm="cd ~/src/projects/checkmix"
+
+alias spyn="python ~/src/python/spynner/spynner.py &"
+
+
+# Android
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home/
+
+export PATH=$PATH:$HOME/platform-tools
+export PATH=$PATH:$HOME/Library/Android/sdk/tools
+
+# AWS
+export AWS_REGION=us-east-1
+
+
+# my functions
+function getdns() {
+  # echo "https://$(dig +short myip.opendns.com @resolver1.opendns.com)"
+  dig -t $1 $2
+}
