@@ -5,7 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.zshrc_files/.zshrc.secrets
 source ~/.zshrc_files/.zshrc.roles
 
-
+# aliases
 alias cdfs="cd ~/src/projects/fanscout"
 alias cdrc="cd ~/src/projects/RunClubApp"
 alias cdttm="cd ~/src/projects/tothemusic-webapp/"
@@ -18,7 +18,7 @@ alias spyn="python ~/src/python/spynner/spynner.py &"
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK_ROOT=~/Library/Android/sdk
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home/
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/
 
 export PATH=$PATH:$HOME/platform-tools
 export PATH=$PATH:$HOME/Library/Android/sdk/tools
